@@ -11,6 +11,7 @@ public class colisão : MonoBehaviour
         if(collisionInfo.collider.tag == "Obstáculo")
         {
             mover.enabled = false;
+            FindObjectOfType<GameManeger>().GameOver();
         }
     }
 }

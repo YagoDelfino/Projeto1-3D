@@ -5,7 +5,8 @@ using UnityEngine;
 public class Fim : MonoBehaviour
 {
     public GameManeger gameManeger;
-    void Toque()
+    public Movimentação mover;
+    void OnTriggerEnter()
     {
         gameManeger.Ganhou();
     }

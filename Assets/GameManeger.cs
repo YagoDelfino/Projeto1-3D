@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class GameManeger : MonoBehaviour
 {
 
-    bool jogoacabou = false;
+    public bool jogoacabou = false;
     public float tempo = 1f;
+    public GameObject completelevel;
 
     public void Ganhou()
     {
-
+        completelevel.SetActive(true);
     }
 
     public void GameOver()
